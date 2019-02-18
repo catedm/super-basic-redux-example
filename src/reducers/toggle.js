@@ -1,13 +1,13 @@
 import { TOGGLE_ME } from '../actions/types';
 
 const initialState = {
-  messageVisibility: false
+  messageVisibility: false,
 }
 
-export default function(state = initialState, action) {
+export default function (state = initialState, action) {
   const { type } = action;
 
-  switch(type) {
+  switch (type) {
     case TOGGLE_ME: {
       return {
         ...state,

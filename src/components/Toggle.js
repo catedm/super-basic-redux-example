@@ -6,12 +6,13 @@ import { toggleMe } from '../actions/actions';
 
 class Toggle extends Component {  
   render() {
+    const { messageVisibility, toggleMe } = this.props;
     return (
       <div>
-        {this.props.messageVisibility &&
+        {messageVisibility &&
           <p>This is a redux example</p>
         }
-        <button onClick={this.props.toggleMe}>Toggle Me</button>
+        <button onClick={toggleMe}>Toggle Me</button>
       </div>
     )
   }
